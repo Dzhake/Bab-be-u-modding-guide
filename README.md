@@ -37,7 +37,7 @@ Then open `assets/tiles/objects`. You can see some `.json` files, you can change
 
 My sprite called `discord` so i need to replace some things.
 
-```
+```json
 [
   {
     "name": "discord",

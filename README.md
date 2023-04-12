@@ -54,13 +54,22 @@ My sprite called `discord` so i need to replace some things.
     "pronouns": ["she", "her"] (Todo: understand what for pronouns exists.)
   }, (don't forget comma if this is not last object in your `.json` file!)
   {
-    "name": "txt_bab",
-    "sprite": ["txt/bab"],
-    "metasprite": ["txt/bab meta"],
-    "types": ["object"],
-    "color": [[4, 1]],
-    "desc": "\"BAB\". thats what it says",
+    "name": "txt_bab", (txt_..object name)
+    "sprite": ["dzhake/txt/discord"], (in my folder i created `txt` folder and put my text there with name `discord`. So path is `dzhake/txt/discord`)
+    "metasprite": ["dzhake/txt/discord meta"], (just add space meta, but you can change this if you want custom meta sprite)
+    "types": ["object"], (What does this text mean? Is it prefix? Infix? Prop? No! It refences to object!)
+    "color": [[4, 1]], (color from palette)
+    "desc": "\"BAB\". thats what it says", (in game this looks `"BAB" thats what it says`. You need to put `\` because this is part of string)
     "tags": ["chars", "baba"]
-  }
+  } ,
+  {
+    "name": "txt_babn't", (just `n't` sprite. It's optional, two sprites is enogh. Why do you want this? To change: sprite (like won't), discription (like bab), or something else)
+    "display": "bab n't", (Just name without `txt_`+` n't` (something about order of display maybe?))
+    "sprite": ["txt/bab meta", "n't"], (todo: write todo here)
+    "types": ["object"],
+    "color": [[4, 1], [2, 2]],
+    "painted": [true, false], (can sprite be painted? Sprite can, but `n't` can't. In `sprite` we can see that we have two sprites!)
+    "desc": "BAB N'T: The same as having these two text tiles in a row."
+  } (No comma here!!!)
 ]
 ```

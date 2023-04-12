@@ -2,9 +2,6 @@
 I hope this will help you create your own bab be u mod.
 ## How to add your sprite
 Put your sprite in `assets/sprites`. You can put it in any folder, i for guide will new one, and call it `dzhake`.
-
-![Image here](pictures/FolderExample.PNG)
-
 Then open `assets/tiles/objects`. You can see some `.json` files, you can change any of them, but i prefer to create my own, and copy text from characters.json to it. But there are so many text! I will leave only text about bab.
 
 ```json
@@ -37,7 +34,7 @@ Then open `assets/tiles/objects`. You can see some `.json` files, you can change
 
 My sprite called `discord` so i need to replace some things.
 
-```json
+```
 [
   {
     "name": "discord",
@@ -73,3 +70,11 @@ My sprite called `discord` so i need to replace some things.
   } (No comma here!!!)
 ]
 ```
+
+I added my sprite to game, but i can't find it in selector!
+Of course i can't! Because i need to add it to selector!
+Open `values.lua` in root game folder and scroll to bottom.
+You can see 9 pages, you can create another one, or add your sprite to existing one.
+I will add my sprite to `unfinished` tab (it's last)
+Instead of 0 somewhere i write `"discord"`, and next to it `"txt_discord"`.
+Now i can open game and find my sprites!

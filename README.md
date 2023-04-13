@@ -52,23 +52,23 @@ My sprite called `discord` so i need to replace some things.
     "pronouns": ["she", "her"]
   },
   {
-    "name": "txt_bab", (txt_..object name)
-    "sprite": ["dzhake/txt/discord"], (in my folder i created `txt` folder and put my text there with name `discord`. So path is `dzhake/txt/discord`)
-    "metasprite": ["dzhake/txt/discord meta"], (just add space meta, but you can change this if you want custom meta sprite)
-    "types": ["object"], (What does this text mean? Is it prefix? Infix? Prop? No! It refences to object!)
-    "color": [[4, 1]], (color from palette)
-    "desc": "\"BAB\". thats what it says", (in game this looks `"BAB" thats what it says`. You need to put `\` because this is part of string)
+    "name": "txt_bab",
+    "sprite": ["dzhake/txt/discord"],
+    "metasprite": ["dzhake/txt/discord meta"],
+    "types": ["object"],
+    "color": [[4, 1]],
+    "desc": "\"BAB\". thats what it says",
     "tags": ["chars", "baba"]
   } ,
   {
-    "name": "txt_babn't", (just `n't` sprite. It's optional, two sprites is enogh. Why do you want this? To change: sprite (like won't), discription (like bab), or something else)
-    "display": "bab n't", (Just name without `txt_`+` n't` (something about order of display maybe?))
-    "sprite": ["txt/bab meta", "n't"], (todo: write todo here)
+    "name": "txt_babn't",
+    "display": "bab n't",
+    "sprite": ["txt/bab meta", "n't"],
     "types": ["object"],
     "color": [[4, 1], [2, 2]],
-    "painted": [true, false], (can sprite be painted? Sprite can, but `n't` can't. In `sprite` we can see that we have two sprites!)
+    "painted": [true, false], 
     "desc": "BAB N'T: The same as having these two text tiles in a row."
-  } (No comma here because this is last object in file!!!)
+  }
 ]
 ```
  - `object thing`:
@@ -83,11 +83,18 @@ My sprite called `discord` so i need to replace some things.
 	 - `tags`: uhh idk
 	 - `pronous`: used in `x is self`. Example: `bab is herself`.
  - `text things`:
-	- blablbalba
- 
- 
- 
- 
+	- `name`: txt_objectname
+	- `sprite`: in my folder i created `txt` folder and put my text there with name `discord`. So path is `dzhake/txt/discord`
+	- `metasprite`: Optional. Use it if you want custom meta sprite.
+	- `types`: Our txt is object with txt at start so type is object.
+	- `desc`: Here is `\"` because You need to put `\` because this is part of string.
+ - `n't sprite`:
+	- This is thing is optional, use it only if you want something to change in txt (like desc, sprite, color)
+	- If you use your `txt` sprite with n't use your metasprite!
+	- Best examples of `n't` sprites are: `Won't` and `Bab`. `Won't` changes sprite to "wo" WITHOUT N'T IN CORNER, and bab changes description (used as tutorial)
+    - `painted`: Can sprites be painted? Sprite can, but `n't` can't. In `sprite` we can see that we have two sprites!
+	
+
 I added my sprite to game, but i can't find it in selector!
 Of course i can't! Because i need to add it to selector!
 Open `values.lua` in root game folder and scroll to bottom.

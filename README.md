@@ -78,6 +78,7 @@ My sprite called `discord` so i need to replace some things.
 	 - `rotate`: true if object can rotate when moves. Don't you think, rotating wall looks strange but rotating bab isn't.
 	 - `featurues`:
 	   - `sans`: when `x is sans` formed `x` gets light-blue thing. You can change it here.
+	   - (not here) things like `knif`, `cool`. Sprites which shown when `x got knif` formed. You can change x and y of these things `"knif" :{"x": 0, "y": 0}`
 	 - `voice`: objects can sing! Changes voice, from `assets/audio/sfx`
 	 - `desc`: Description. You see it when hover above object in selector
 	 - `tags`: uhh idk
